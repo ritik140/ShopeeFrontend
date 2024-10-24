@@ -12,9 +12,12 @@ import Home from "./pages/Home.jsx";
 import { Provider } from "react-redux";
 import Login from "./components/Login/Login.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
-import Header from "./components/Home/Header.jsx";
 import Category from "./pages/Category.jsx";
 import ProductList from "./pages/ProductList.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import CheckoutComplete from "./pages/CheckoutComplete.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +25,11 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/category" element={<Category />} />
       <Route path="/product-list" element={<ProductList />} />
+      <Route path="/product-detail" element={<ProductDetail />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/checkout-complete" element={<CheckoutComplete />} />
+
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
     </Route>
