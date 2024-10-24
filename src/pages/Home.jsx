@@ -7,20 +7,19 @@ import FeatureSection from "../components/Home/FeatureSection";
 import SummerCollection from "../components/Home/SummerCollection";
 import WhyChoose from "../components/Home/WhyChoose";
 import CompanyName from "../components/Home/CompanyName";
-import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
     <>
       <Header />
       <Main />
-      <Categories />
+      <Categories isHome={true} />
       <NewArrivals />
       <FeatureSection />
       <SummerCollection />
       <WhyChoose />
       <CompanyName />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

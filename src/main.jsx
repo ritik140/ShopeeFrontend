@@ -13,11 +13,15 @@ import { Provider } from "react-redux";
 import Login from "./components/Login/Login.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Header from "./components/Home/Header.jsx";
+import Category from "./pages/Category.jsx";
+import ProductList from "./pages/ProductList.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App/>}>
+    <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
+      <Route path="/category" element={<Category />} />
+      <Route path="/product-list" element={<ProductList />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
     </Route>
@@ -25,7 +29,7 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById("root")).render(
   // <Provider store={store}>
-   
+
   // </Provider>
-   <RouterProvider router={router} />
+  <RouterProvider router={router} />
 );

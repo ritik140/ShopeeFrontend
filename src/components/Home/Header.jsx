@@ -10,14 +10,16 @@ const Header = () => {
   return (
     <nav className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 bg-white shadow-md">
       {/* Left Side Logo */}
-      <div className="flex items-center space-x-2">
-        <div className="w-8 h-8 bg-black rounded-full"></div>
-        <span className="font-bold text-xl text-gray-800">Shopee</span>
-      </div>
+      <Link to={"/"}>
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-black rounded-full"></div>
+          <span className="font-bold text-xl text-gray-800">Shopee</span>
+        </div>
+      </Link>
 
       {/* Center Links (Stacked on Mobile, Horizontal on Larger Screens) */}
       <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12 mt-4 md:mt-0">
-        <Link to="/categories" className="text-gray-600 hover:text-gray-800">
+        <Link to="/category" className="text-gray-600 hover:text-gray-800">
           Categories
         </Link>
         <a href="#" className="text-gray-600 hover:text-gray-800">
